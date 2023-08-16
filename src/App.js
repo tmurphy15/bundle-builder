@@ -1,7 +1,7 @@
 import ProductList from 'components/ProductList';
 import ProductCart from 'components/ProductCart';
 
-import LogoImg from 'assets/logo.jpeg';
+import LogoImg from 'assets/logo.png';
 
 import './App.scss';
 
