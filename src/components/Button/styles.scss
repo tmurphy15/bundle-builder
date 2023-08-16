@@ -1,0 +1,8 @@
+@import 'config/variables.scss';
+
+.bb__button {
+  background-color: $red-color;
+  border: none;
+  text-transform: uppercase;
+  color: $white-color;
+}

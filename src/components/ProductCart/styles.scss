@@ -1,0 +1,15 @@
+@import 'config/variables.scss';
+
+.bb__product-cart {
+  text-align: center;
+}
+
+.bb__product-cart-heading {
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $gray-color;
+
+  p {
+    margin: 0;
+  }
+}

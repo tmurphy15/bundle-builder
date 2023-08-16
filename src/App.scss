@@ -1,4 +1,33 @@
+@import 'config/variables.scss';
+
 body {
   margin: 0;
   padding: 0;
+  background-color: $lightgray-color;
+}
+
+.bb__header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  height: 4rem;
+  padding: 0.5rem;
+  background-color: $red-color;
+
+  .bb__header-logo {
+    height: 100%;
+  }
+}
+
+.bb__main {
+  margin: 6rem auto;
+  width: 80%;
+  max-width: 75rem;
+}
+
+.bb__aside {
+  position: fixed;
+  top: 6rem;
+  right: 10%;
 }
