@@ -32,6 +32,11 @@
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .product-list-item__quantity {
@@ -43,4 +48,9 @@
   width: 3rem;
   height: 3rem;
   border-radius: 1.5rem;
+
+  &.filled {
+    background-color: $red-color;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.1);
+  }
 }

@@ -54,6 +54,11 @@
   border: 1px solid $gray-color;
 }
 
+.product-cart__products-image {
+  width: 100%;
+  height: 100%;
+}
+
 .product-cart__actions {
   padding: 1rem;
   border-top: 1px solid $lightgray-color;

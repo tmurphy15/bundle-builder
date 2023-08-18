@@ -3,7 +3,7 @@ import Card from 'components/Card';
 
 import './styles.scss';
 
-const ProductCart = () => {
+const ProductCart = ({ cartProducts, cartFilled }) => {
   return (
     <div className="product-cart">
       <Card>
@@ -14,12 +14,20 @@ const ProductCart = () => {
           </div>
         </div>
         <div className="product-cart__products">
-          <div className="product-cart__products-item"></div>
-          <div className="product-cart__products-item"></div>
-          <div className="product-cart__products-item"></div>
+          {[...Array(3)].map((_, index) => (
+            <div key={index} className="product-cart__products-item">
+              {cartProducts[index] && (
+                <img
+                  className="product-cart__products-image"
+                  src={cartProducts[index].image}
+                  alt={cartProducts[index].title}
+                />
+              )}
+            </div>
+          ))}
         </div>
         <div className="product-cart__actions">
-          <Button>Add to Cart</Button>
+          <Button disabled={!cartFilled}>Add to Cart</Button>
         </div>
       </Card>
     </div>
