@@ -1,2 +1,19 @@
-.bb__product-list {
+@import 'styles/variables.scss';
+
+.product-list__section {
+  margin-bottom: 4rem;
+  color: $black-color;
+}
+
+.product-list__section-title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.product-list__section-items {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }

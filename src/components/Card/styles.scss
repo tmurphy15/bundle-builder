@@ -1,6 +1,11 @@
-@import 'config/variables.scss';
+@import 'styles/variables.scss';
 
-.bb__card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
   background-color: $white-color;
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }

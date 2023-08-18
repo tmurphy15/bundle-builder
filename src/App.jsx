@@ -8,17 +8,18 @@ import './App.scss';
 function App() {
   return (
     <>
-      <header className="bb__header">
-        <img className="bb__header-logo" src={LogoImg} alt="Lume Logo" />
+      <header>
+        <img className="header-logo" src={LogoImg} alt="Lume Logo" />
       </header>
-      <main className="bb__main">
-        <section className="bb__content">
+      <main>
+        <section className="content">
           <ProductList />
         </section>
-        <aside className="bb__aside">
+        <aside>
           <ProductCart />
         </aside>
       </main>
+      <footer>© 2023 Bundle Builder by Terry Murphy</footer>
     </>
   );
 }

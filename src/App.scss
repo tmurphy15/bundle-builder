@@ -1,12 +1,15 @@
-@import 'config/variables.scss';
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
 
 body {
   margin: 0;
   padding: 0;
   background-color: $lightgray-color;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.bb__header {
+header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -14,20 +17,40 @@ body {
   height: 4rem;
   padding: 0.5rem;
   background-color: $red-color;
+  z-index: 1;
 
-  .bb__header-logo {
+  .header-logo {
     height: 100%;
   }
 }
 
-.bb__main {
-  margin: 6rem auto;
-  width: 80%;
-  max-width: 75rem;
+footer {
+  background-color: $black-color;
+  text-align: center;
+  padding: 1.8rem;
+  font-size: 0.9rem;
+  color: $white-color;
 }
 
-.bb__aside {
-  position: fixed;
-  top: 6rem;
-  right: 10%;
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  margin: 6rem auto;
+  padding: 1rem;
+  max-width: 75rem;
+
+  @include mobile-screen {
+    flex-direction: row;
+  }
+}
+
+aside {
+  position: sticky;
+  top: 5.5rem;
+
+  @include mobile-screen {
+    position: inherit;
+  }
 }

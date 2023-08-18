@@ -1,8 +1,32 @@
-@import 'config/variables.scss';
+@import 'styles/variables.scss';
 
-.bb__button {
+.button {
   background-color: $red-color;
   border: none;
   text-transform: uppercase;
   color: $white-color;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+  height: 2rem;
+
+  &:disabled {
+    opacity: 0.5;
+    background-color: $gray-color;
+    pointer-events: none;
+  }
+}
+
+.rounded-button {
+  background-color: $lightgray-color;
+  color: $green-color;
+  font-size: 1.5rem;
+  border: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 1.2rem;
+
+  &:hover {
+    background-color: $lightgray-color2;
+  }
 }
